@@ -1,30 +1,27 @@
-<html title="message:covid19_vaccine_certificate"><head><link type="text/css" rel="stylesheet" href="/assest/2.36.7/core/default.css"/></head><style>
-  .white-backgroun {
-  background-color: #ffffff;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  height: 50%;
-  }
-  green-background-all {
-  background-color: #3fb775;
-  /*border-top-left-radius: 20px;
-  border-top-right-radius: 20px;*/
-  }
-  .green background {
-  background-color: #fb3775;
-  height: 92%;
-  /*border-top-left-radius: 20px;
-  border-top-right-radius: 20px;*/
-  }
-  .bottom-background {
-  background-color: #ffffff;
-  height: 5%;
-  display: flex;
-  /*border-top-left-radius: 20px;
-  border-top-right-radius: 20px;*/
-  position: absolute; /* or absolute */
-  top: 94%;
-  left: 40%;
-  }
-  .moj-termin-logo-image {
-  }
+# Contributing
+Pull Requests are welcome. Consider [filing an issue](https://github.com/TransitScreen/php-heroku-client/issues/new) first to discuss your needs and plans. All project participation is subject to the [Code of Conduct](CODE_OF_CONDUCT.md).
+## Quality Standards
+[![Quality Score](https://img.shields.io/scrutinizer/g/TransitScreen/php-heroku-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/TransitScreen/php-heroku-client)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/TransitScreen/php-heroku-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/TransitScreen/php-heroku-client)
+We try to maintain a very high level of code quality, which should always be possible with such a small project. Please keep that in mind when proposing changes. We will maintain 100% test coverage, small methods, and good separation of concerns between areas of the code.
+## Structure
+The component view of this project from [Scrutinizer CI](https://scrutinizer-ci.com/) gives a good overview of how it is constructed:
+![Code Components](./docs/media/components.png)
+## Pull Requests
+- Please follow the [PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). The easiest way to apply the conventions is to install [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer).
+- Write any tests called for by your changes.
+- Update code comments and README documentation as appropriate.
+- Consider release effects. We practice semantic versioning, so breaking changes will require a major version release.
+- Create topic branches.
+- One pull request per feature.
+
+## Running Tests
+``` bash
+$ vendor/bin/phpunit
+```
+$ composer test
+```
+Or (depending on how you have Composer installed)
+```
+$ php ./composer.phar test
+```
